@@ -1,7 +1,4 @@
-import React, {
-	useState,
-	useEffect,
-} from 'react';
+import React, { useState } from 'react';
 import styles from './Styles/Header.module.scss';
 import { IoMailOutline } from 'react-icons/io5';
 import { FaInstagram } from 'react-icons/fa';
