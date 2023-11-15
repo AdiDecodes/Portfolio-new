@@ -1,0 +1,282 @@
+body {
+	&::-webkit-scrollbar {
+		width: 0.5rem;
+	}
+
+	&::-webkit-scrollbar-track {
+		background: #1e1e24;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		border-radius: 2rem;
+		border: 1px solid rgba(255, 255, 255, 0.295);
+	}
+
+	background-color: #1b1b1b;
+}
+
+.main {
+	min-height: 100svh;
+	background-color: #1b1b1b;
+	font-family: 'Poppins', sans-serif;
+
+	.heroWrapper {
+		padding: 10vh 0 0 0;
+		.hero {
+			display: flex;
+			min-height: 80vh;
+			padding: 0 15%;
+
+			.left {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				width: 60%;
+
+				h1 {
+					font-weight: 300;
+					font-size: 2rem;
+					color: aliceblue;
+				}
+
+				span {
+					font-weight: 700;
+					font-size: 3.75rem;
+					color: aliceblue;
+				}
+
+				p {
+					font-weight: 400;
+					font-size: 1.15rem;
+					color: aliceblue;
+				}
+
+				.contactDiv {
+					margin: 3rem 0 0 0;
+					display: flex;
+					align-items: center;
+					gap: 2.5rem;
+					.viewWorks {
+						padding: 0.75rem 2rem;
+						background-color: white;
+						width: fit-content;
+						font-size: 1.1rem;
+						font-weight: 500;
+						border: 1px solid transparent;
+						transition: all 0.2s ease-in-out;
+
+						&:hover {
+							cursor: pointer;
+							background-color: transparent;
+							border: 1px solid white;
+							color: white;
+						}
+					}
+
+					.contactMe {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						gap: 0.75rem;
+						transition: all 0.2s ease-in-out;
+
+						&:hover {
+							cursor: pointer;
+						}
+
+						i {
+							color: white;
+						}
+
+						h3 {
+							font-size: 1.1rem;
+							font-weight: 500;
+							color: white;
+						}
+
+						span {
+							font-size: 1rem;
+						}
+					}
+				}
+			}
+
+			.right {
+				display: flex;
+				align-items: center;
+				justify-content: flex-end;
+				width: 40%;
+
+				img {
+					width: 80%;
+					object-fit: contain;
+					border: 12px solid white;
+					border-radius: 100%;
+					aspect-ratio: 1;
+				}
+			}
+		}
+
+		> i {
+			height: 10vh;
+			color: white;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 1.5rem;
+			animation: animate 1s ease-in-out infinite;
+
+			@keyframes animate {
+				0% {
+					transform: translateY(0);
+				}
+				50% {
+					transform: translateY(-10px);
+				}
+				100% {
+					transform: translateY(0);
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 300px) and (max-width: 899px) {
+	html {
+		font-size: 70%;
+	}
+	.main {
+		min-height: 100svh;
+		background-color: #1b1b1b;
+		font-family: 'Poppins', sans-serif;
+
+		.heroWrapper {
+			.hero {
+				display: flex;
+				flex-direction: column-reverse;
+				align-items: center;
+				justify-content: flex-end;
+				min-height: auto;
+				margin: 5rem 0 2rem 0;
+				padding: 0 2%;
+
+				.left {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					width: 100%;
+					text-align: center;
+
+					h1 {
+						font-weight: 300;
+						font-size: 2rem;
+						color: aliceblue;
+						width: 100%;
+					}
+
+					span {
+						font-weight: 700;
+						font-size: 2.5rem;
+						color: aliceblue;
+						width: 100%;
+					}
+
+					p {
+						font-weight: 400;
+						font-size: 1.15rem;
+						color: aliceblue;
+						width: 100%;
+					}
+
+					.contactDiv {
+						margin: 3rem 0 0 0;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						gap: 2.5rem;
+						.viewWorks {
+							padding: 0.75rem 2rem;
+							background-color: white;
+							width: fit-content;
+							font-size: 1.1rem;
+							font-weight: 500;
+							border: 1px solid transparent;
+							transition: all 0.2s ease-in-out;
+
+							&:hover {
+								cursor: pointer;
+								background-color: transparent;
+								border: 1px solid white;
+								color: white;
+							}
+						}
+
+						.contactMe {
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							gap: 0.75rem;
+							transition: all 0.2s ease-in-out;
+
+							&:hover {
+								cursor: pointer;
+							}
+
+							i {
+								color: white;
+							}
+
+							h3 {
+								font-size: 1.1rem;
+								font-weight: 500;
+								color: white;
+							}
+
+							span {
+								font-size: 1rem;
+							}
+						}
+					}
+				}
+
+				.right {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 100%;
+					margin: 0 0 2rem 0;
+
+					img {
+						width: 80%;
+						object-fit: contain;
+						border: 12px solid white;
+						border-radius: 100%;
+						aspect-ratio: 1;
+					}
+				}
+			}
+
+			> i {
+				height: 10vh;
+				color: white;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 1.5rem;
+				animation: animate 1s ease-in-out infinite;
+
+				@keyframes animate {
+					0% {
+						transform: translateY(0);
+					}
+					50% {
+						transform: translateY(-10px);
+					}
+					100% {
+						transform: translateY(0);
+					}
+				}
+			}
+		}
+	}
+}
