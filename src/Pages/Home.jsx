@@ -98,7 +98,7 @@ const Home = () => {
 										onContextMenu={(e) =>
 											e.preventDefault()
 										}
-										src='https://res.cloudinary.com/customzone-app/image/upload/v1700130531/Portfolio/profile-pic_klni3m.png'
+										src='https://res.cloudinary.com/customzone-app/image/upload/v1700131583/Portfolio/profile-pic_2_zxxxga.png'
 										alt=''
 									/>
 								</div>
