@@ -230,7 +230,7 @@ const Contact = () => {
 						data-aos-delay='50'
 					>
 						<IoMailOutline />
-						<p>aditya@cleverstudio.in</p>
+						<p>contact@adidecodes.me</p>
 					</div>
 
 					<div

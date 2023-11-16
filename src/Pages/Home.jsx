@@ -22,6 +22,19 @@ const Home = () => {
 		}, 6000);
 	}, []);
 
+	const scroll = (elementId) => {
+		const element =
+			document.getElementById(elementId);
+		const headerHeight = window.innerHeight * 0.1;
+		const topOffset =
+			element.offsetTop - headerHeight;
+
+		window.scrollTo({
+			top: topOffset,
+			behavior: 'smooth',
+		});
+	};
+
 	return (
 		<>
 			{loading ? (
@@ -59,10 +72,20 @@ const Home = () => {
 									</h1>
 									<p> based in Mumbai, India</p>
 									<div className={styles.contactDiv}>
-										<div className={styles.viewWorks}>
+										<div
+											className={styles.viewWorks}
+											onClick={() => {
+												scroll('projects');
+											}}
+										>
 											View My Works
 										</div>
-										<div className={styles.contactMe}>
+										<div
+											className={styles.contactMe}
+											onClick={() => {
+												scroll('contact');
+											}}
+										>
 											<h3>Contact Me</h3>
 											<i className='fa-regular fa-sort-down'></i>
 										</div>
@@ -72,7 +95,10 @@ const Home = () => {
 									className={`${styles.right} animate__animated animate__pulse`}
 								>
 									<img
-										src='https://aditya.cleverstudio.in/assets/img-49cb8e7f.jpeg'
+										onContextMenu={(e) =>
+											e.preventDefault()
+										}
+										src='https://res.cloudinary.com/customzone-app/image/upload/v1700130531/Portfolio/profile-pic_klni3m.png'
 										alt=''
 									/>
 								</div>

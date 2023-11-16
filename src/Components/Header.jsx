@@ -91,7 +91,7 @@ const Header = () => {
 						}}
 					>
 						<IoMailOutline />
-						<p>aditya@mail.com</p>
+						<p>contact@adidecodes.me</p>
 					</div>
 					<Hamburger
 						size={MenuProps.size}

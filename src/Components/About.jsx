@@ -76,7 +76,7 @@ const About = () => {
 		{
 			id: 2,
 			title: 'Email',
-			data: 'aditya@cleverstudio.in',
+			data: 'contact@adidecodes.me',
 			delay: '100',
 		},
 		{
