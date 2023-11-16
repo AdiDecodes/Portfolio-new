@@ -18,10 +18,6 @@ import 'react-toastify/dist/ReactToastify.css';
 import PuffLoader from 'react-spinners/PuffLoader';
 
 const Contact = () => {
-	const serviceId = import.meta.env.VITE_serviceId;
-	const templateId = import.meta.env
-		.VITE_templateId;
-	const userId = import.meta.env.VITE_userId;
 	const toastRef = useRef(null);
 
 	const toastProps = {
@@ -147,14 +143,9 @@ const Contact = () => {
 	const handleSubmit = async (event) => {
 		event.preventDefault();
 		var data = {
-			service_id: serviceId,
-			template_id: templateId,
-			user_id: userId,
-			template_params: {
-				name: name,
-				email: email,
-				message: message,
-			},
+			name: name,
+			email: email,
+			message: message,
 		};
 		if (
 			validateEmail(email) &&
@@ -164,7 +155,7 @@ const Contact = () => {
 			showToast('Sending the message..');
 			axios
 				.post(
-					'https://api.emailjs.com/api/v1.0/email/send',
+					'https://mailer-api-xi.vercel.app/',
 					data
 				)
 				.then((response) => {

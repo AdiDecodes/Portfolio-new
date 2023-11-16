@@ -14,7 +14,7 @@ import { Typewriter } from 'react-simple-typewriter';
 import Contact from '../Components/Contact.jsx';
 
 const Home = () => {
-	const [loading, setLoading] = useState(false);
+	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
 		setTimeout(() => {
