@@ -20,7 +20,7 @@ jobs:
    - name: Deploy to Hostinger
      uses: SamKirkland/FTP-Deploy-Action@4.0.0
      with:
-      server: ${{ secrets.FTP_SERVER }}
+      server: ftp.adidecodes.me
       username: u295552106.adityasingh
       password: ${{ secrets.FTP_PASSWORD }}
       server-dir: /
