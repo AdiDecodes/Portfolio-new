@@ -12,7 +12,7 @@ import Footer from '../Components/Footer.jsx';
 import styles from '../Styles/Home.module.scss';
 import { Typewriter } from 'react-simple-typewriter';
 import Contact from '../Components/Contact.jsx';
-import profile from '../assets/profile.png';
+import profileImg from '../assets/profile.png';
 
 const Home = () => {
 	const [loading, setLoading] = useState(true);
@@ -99,7 +99,7 @@ const Home = () => {
 										onContextMenu={(e) =>
 											e.preventDefault()
 										}
-										src={profile}
+										src={profileImg}
 										alt=''
 									/>
 								</div>
