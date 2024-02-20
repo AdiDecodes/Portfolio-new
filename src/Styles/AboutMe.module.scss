@@ -102,7 +102,7 @@
 			> p {
 				line-height: 2rem;
 				color: white;
-				font-size: 1.3rem;
+				font-size: 1.2rem;
 				font-weight: 300;
 				margin: 2rem 0;
 			}
@@ -123,13 +123,13 @@
 				flex-wrap: wrap;
 
 				p:first-child {
-					font-size: 1.15rem;
+					font-size: 1rem;
 					font-weight: 500;
 					color: white;
 				}
 
 				p:last-child {
-					font-size: 1.35rem;
+					font-size: 1.15rem;
 					font-weight: 200;
 					color: white;
 					margin: 0.25rem 0;
@@ -143,15 +143,17 @@
 			width: fit-content;
 			margin: 1rem 0 0 0;
 			border: 1px solid transparent;
+			transition: all 0.15s ease-in-out;
 
 			a {
 				all: unset;
 				color: black;
 				font-size: 1.1rem;
+				transition: all 0.15s ease-in-out;
 			}
 
 			&:hover {
-				a {
+				> a {
 					color: white;
 				}
 

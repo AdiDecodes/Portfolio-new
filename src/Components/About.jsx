@@ -157,7 +157,7 @@ const About = () => {
 				>
 					<a
 						href={resume}
-						download
+						target='_blank'
 					>
 						Download CV
 					</a>

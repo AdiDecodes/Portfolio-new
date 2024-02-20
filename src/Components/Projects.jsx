@@ -4,6 +4,12 @@ import React, {
 } from 'react';
 import styles from './Styles/Projects.module.scss';
 import ModalC from '../Components/Modal.jsx';
+import cleverstudio1 from '../Assets/cleverstudio1.png';
+import cleverstudio2 from '../Assets/cleverstudio2.png';
+import dropngo1 from '../Assets/dropngo1.png';
+import vidzy from '../Assets/vidzy.png';
+import skycloud from '../Assets/skycloud.png';
+import superbattle from '../Assets/superbattle.png';
 
 const Projects = () => {
 	const [showModal, setshowModal] =
@@ -20,7 +26,7 @@ const Projects = () => {
 				images: [
 					{
 						id: 1,
-						url: 'https://res.cloudinary.com/customzone-app/image/upload/v1699979177/Portfolio/Dropngo_thumb_s2dh49.png',
+						url: dropngo1,
 						alt: 'Drop-N-Go',
 					},
 				],
@@ -35,7 +41,12 @@ const Projects = () => {
 				images: [
 					{
 						id: 1,
-						url: 'https://res.cloudinary.com/customzone-app/image/upload/v1699979175/Portfolio/cleverstudio_thumb_tbh9rv.png',
+						url: cleverstudio1,
+						alt: 'CleverStudio',
+					},
+					{
+						id: 2,
+						url: cleverstudio2,
 						alt: 'CleverStudio',
 					},
 				],
@@ -50,8 +61,8 @@ const Projects = () => {
 				images: [
 					{
 						id: 1,
-						url: 'https://res.cloudinary.com/customzone-app/image/upload/v1699979176/Portfolio/vidzy_thumb_qauava.png',
-						alt: 'Drop-N-Go',
+						url: vidzy,
+						alt: 'vidzy',
 					},
 				],
 				url: 'https://adidecodes.github.io/Vidzy/',
@@ -65,8 +76,8 @@ const Projects = () => {
 				images: [
 					{
 						id: 1,
-						url: 'https://res.cloudinary.com/customzone-app/image/upload/v1699979176/Portfolio/superbattle_thumb_i7nxz1.png',
-						alt: 'Drop-N-Go',
+						url: superbattle,
+						alt: 'SuperBattle',
 					},
 				],
 				url: 'https://www.superbattle.in/',
@@ -84,16 +95,11 @@ const Projects = () => {
 				images: [
 					{
 						id: 1,
-						url: 'https://res.cloudinary.com/customzone-app/image/upload/v1699979175/Portfolio/skycloud_thumb_scbaqd.png',
-						alt: 'Drop-N-Go',
-					},
-					{
-						id: 2,
-						url: 'https://aditya.cleverstudio.in/assets/skycloud-98bc54b1.png',
-						alt: 'Drop-N-Go',
+						url: skycloud,
+						alt: 'Skycloud',
 					},
 				],
-				url: 'https://drop-and-go-frontend.vercel.app/',
+				url: 'https://adidecodes.github.io/Skycloud/',
 			},
 		]
 	);

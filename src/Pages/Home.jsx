@@ -12,6 +12,7 @@ import Footer from '../Components/Footer.jsx';
 import styles from '../Styles/Home.module.scss';
 import { Typewriter } from 'react-simple-typewriter';
 import Contact from '../Components/Contact.jsx';
+import profile from '../assets/profile.png';
 
 const Home = () => {
 	const [loading, setLoading] = useState(true);
@@ -98,7 +99,7 @@ const Home = () => {
 										onContextMenu={(e) =>
 											e.preventDefault()
 										}
-										src='https://res.cloudinary.com/customzone-app/image/upload/v1700131583/Portfolio/profile-pic_2_zxxxga.png'
+										src={profile}
 										alt=''
 									/>
 								</div>

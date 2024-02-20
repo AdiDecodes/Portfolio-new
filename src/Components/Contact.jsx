@@ -152,7 +152,7 @@ const Contact = () => {
 			name.length >= 1 &&
 			message.length >= 1
 		) {
-			showToast('Sending the message..');
+			showToast('Sending message..');
 			axios
 				.post(
 					'https://mailer-api-xi.vercel.app/',
@@ -261,7 +261,7 @@ const Contact = () => {
 							/>
 							<SiBuymeacoffee
 								data-tooltip-id='coffee'
-								data-tooltip-content='Chai peelado!! 😊'
+								data-tooltip-content='Buy me a tea 😊'
 								data-tooltip-place='top'
 								onClick={() => {
 									openUrl(url[3].url);

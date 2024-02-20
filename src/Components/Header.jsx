@@ -182,7 +182,7 @@ const Header = () => {
 					/>
 					<SiBuymeacoffee
 						data-tooltip-id='coffee'
-						data-tooltip-content='Chai peelado!! 😊'
+						data-tooltip-content='Buy me a tea 😊'
 						data-tooltip-place='bottom'
 						onClick={() => {
 							openUrl(url[3].url);
