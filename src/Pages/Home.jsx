@@ -12,7 +12,7 @@ import Footer from '../Components/Footer.jsx';
 import styles from '../Styles/Home.module.scss';
 import { Typewriter } from 'react-simple-typewriter';
 import Contact from '../Components/Contact.jsx';
-import profileImg from '../assets/profile.png';
+import profileImg from '../Assets/profile.png';
 
 const Home = () => {
 	const [loading, setLoading] = useState(true);
