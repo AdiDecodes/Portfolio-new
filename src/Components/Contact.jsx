@@ -155,7 +155,7 @@ const Contact = () => {
 			showToast('Sending message..');
 			axios
 				.post(
-					'https://mailer-api-xi.vercel.app/',
+					'https://mailer-api-git-main-adidecodes.vercel.app/',
 					data
 				)
 				.then((response) => {
